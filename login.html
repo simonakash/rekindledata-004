@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Company Name -->
+		<title>rekindledata</title>
+		<!-- Company Icon -->
+		<link rel="icon" href="images/header-footer/favicon.ico">
+		<!-- Tailwind-Css -->
+		<link rel="stylesheet" href="css/tailwind.min.css">
+
+		<!-- Extra-Css -->
+		<style>
+			/*------------------font----------------------*/
+			@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap');
+
+			.font-inter{
+				font-family: 'Inter', sans-serif;
+			}
+			.font-jost{
+				font-family: 'Jost', sans-serif;
+			}
+			.font-poppins{
+				font-family: 'Poppins', sans-serif;
+			}
+			.font-robotoslab{
+				font-family: 'Roboto Slab', serif;
+			}
+			/*----------------------------------------*/
+			@media(min-width:1320px){
+				.max-w-1244{
+					max-width: 1244px;
+				}
+			}
+			@media(min-width:1300px){
+				#sec1{
+				min-height: 1080px;
+				background-image: url(images/Login/bg1.jpg);
+				}
+			}
+			@media(max-width:1300px){
+				#sec-mobile{
+					min-height: 620px;
+					background-image: url(images/Login/bg2.jpg);
+				}
+			}
+			@media(min-width:420px){
+				#sec-mobile{
+					background-color: #FE6351;
+				}
+			}
+			@media(min-width:1300px){
+				#sec-mobile{
+					background-color:transparent;
+				}
+			}
+			/*------------------all css----------------------*/
+			.tracking-widest{
+				letter-spacing: 0.2em !important;
+			}
+			.leading-loose{
+				line-height:1.2 !important;
+			}
+			.linear-gradient-orrange{
+				background: linear-gradient(90deg, #FD6350 0%, #FF764A 100%) !important;
+			}
+			.border-color-orrange{
+				border-color: #FD6350;
+			}
+			.text-orrange-500{
+				color: #FD6350 !important;
+			}
+			img, video {
+			object-fit: cover;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- ==Main Section == -->
+		<main>
+			<!-----=====Sec 001=======----->
+			<section id="sec1" class="bg-contain bg-right bg-no-repeat flex items-center justify-center">
+				<!---->
+				<div class="max-w-1244 mx-auto grid lg:grid-cols-2 grid-cols-1 2xl:gap-52 gap-0 font-inter">
+					<!---->
+					<div class=" px-5 flex items-center py-20 bg-white md:px-10 lg:px-20 2xl:px-0">
+						<div class=" w-full">
+							<h1 class="font-semibold font-jost text-4xl text-gray-800 pb-10 tracking-tighter">Log in to your account</h1>
+							<!--form-->
+							<form action="#">
+								<div class=" w-full">
+									<!----username---->
+									<input aria-label="form" class="block w-full placeholder-gray-600 focus:outline-none border-b p-4 rounded-lg border mb-5" id="email" type="email" placeholder="Your email address">
+									<!----pass---->
+									<input aria-label="form" class="block w-full placeholder-gray-600 focus:outline-none border-b p-4 rounded-lg border" id="password" type="password" placeholder="Your password">
+									<!---->
+									<div class="flex items-center justify-between text-sm mb-8 mt-5 font-medium">
+										<!---->
+										<div class=" flex items-center text-gray-600">
+											<label for="checkbox">
+												<input aria-label="form" id="checkbox" type="checkbox" class="h-3 w-3 mr-2 border border-gray-300 rounded-md checked:bg-pink-400 checked:border-transparent focus:outline-none">
+												Remember me
+											</label>
+										</div>
+										<!---->
+										<div>
+											<a href="#" class=" text-orrange-500">Forgot Password?</a>
+										</div>
+									</div>
+								</div>
+								<!--button-->
+								<div>
+									<a class=" block py-3 linear-gradient-orrange w-full rounded-md text-center font-semibold text-white" href="#">Log In</a>
+								</div>
+								<!---->
+								<div class=" mt-10 text-center">
+									<a class="underline text-gray-800" href="#">Don’t have an account?</a>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!---->
+					<div id="sec-mobile" class="bg-no-repeat bg-contain md:bg-cover bg-center text-white flex items-center 2xl:justify-end p-10 2xl:p-0">
+						<div class="xl:w-3/4 px-5 2xl:px-0 pl-8 md:pl-0">
+							<h1 class=" xl:text-5xl text-3xl font-semibold font-jost leading-loose mb-3">Explore Your Needs Home Or Office</h1>
+							<p class=" xl:text-xl text-sm font-medium font-inter">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
+
+
+
+
+
+
+
