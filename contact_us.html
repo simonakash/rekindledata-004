@@ -36,13 +36,12 @@
 					max-width: 1244px;
 				}
 			}
+			@media(min-width:900px){
+				.max-w-820{
+					max-width: 820px;
+				}
+			}
 			/*------------------all css----------------------*/
-			#about1{
-				min-height: 400px;
-			}
-			#about2{
-				min-height: 560px;
-			}
 			#footer1{
 				min-height: 467px;
 			}
@@ -68,7 +67,7 @@
 	</head>
 	<body>
 		<!-- ==Header Section == -->
-		<header class=" absolute top-0 left-0 right-0 border-b border-gray-500">
+		<header class="bg-black">
 			<!----Main nav--->
 			<nav class="px-5 py-8 sm:px-10 lg:px-20 2xl:px-0 max-w-1244 mx-auto">
 				<div class="flex items-center justify-between">
@@ -140,224 +139,212 @@
 		<!-- ==Main Section == -->
 		<main>
 			<!-----=====Sec 001=======----->
-			<section id="about1" class="bg-cover bg-no-repeat bg-center  flex items-center justify-center" style="background-image: url(images/about_us/a_bg1.jpg);">
-				<!----->
-				<div class="max-w-1244 mx-auto text-white text-center flex items-center justify-center px-5 mt-20 py-8 sm:px-10 lg:px-20 2xl:px-0">
-					<div>
-						<h1 class=" md:text-4xl text-3xl font-extrabold font-jost">About</h1>
-						<p class="font-robotoslab font-medium text-base mt-3 tracking-wider"><a href="home.html">Home</a> · About</p>
+			<section class=" relative">
+				<!--Hero text--->
+				<div class=" text-center py-16 max-w-1244 mx-auto md:px-0 px-10">
+					<!---->
+					<p class="text-orrange-500 md:text-lg text-sm font-semibold font-inter mb-3 ">Contact us</p>
+					<!---->
+					<h1 class="md:text-5xl text-3xl font-bold font-jost 2xl:w-1/2 lg:w-3/6 mx-auto ">Get in touch with our sales and support teams.</h1>
+				</div>
+				<!---->
+				<div class="max-w-820 mx-auto pb-20 px-5 sm:px-10 lg:px-20 2xl:px-0">
+					<!----->
+					<form action="#">
+						<!-----Name and Organization----->
+						<div class="2xl:mb-6 mb-4">
+							<div class=" grid md:grid-cols-2 grid-cols-1 gap-4">
+								<!---->
+								<div>
+									<label for="full-name" class="block text-sm font-medium text-gray-800 mb-2">Full name*</label>
+									<!----->
+									<input aria-label="form" type="text" name="full-name" id="full-name" placeholder="Full name*" required class="p-3 px-4 block w-full shadow-sm text-xs border border-gray-300 rounded-md focus:outline-none focus:border-gray-400">
+								</div>
+								<!---->
+								<div>
+									<label for="Organization-name" class="block text-sm font-medium text-gray-800 mb-2">Organization*</label>
+									<!----->
+									<input aria-label="form" type="text" name="Organization-name" id="Organizationname" placeholder="Company name" required class="p-3 px-4 block w-full shadow-sm text-xs border border-gray-300 rounded-md focus:outline-none focus:border-gray-400">
+								</div>
+							</div>
+						</div>
+						<!-----contact info----->
+						<div class=" grid md:grid-cols-2 grid-cols-1 gap-4 2xl:mb-6 mb-4">
+							<!-----Email address----->
+							<div>
+								<label class="block text-sm font-medium text-gray-800 mb-2">Email address</label>
+								<!----->
+								<input aria-label="form" type="email" name="email" id="email" placeholder="Email Address*" required class="p-3 px-4 block w-full shadow-sm text-xs border border-gray-300 rounded-md focus:outline-none focus:border-gray-400">
+							</div>
+							<!-----Phone number----->
+							<div>
+								<label class="block text-sm font-medium text-gray-800 mb-2">Phone number*</label>
+								<!----->
+								<input aria-label="form" type="phone" name="phone" id="phone" placeholder="Full number (incl. prefix)" class="p-3 px-4 block w-full shadow-sm text-xs border border-gray-300 rounded-md focus:outline-none focus:border-gray-400">
+							</div>
+						</div>
+						<!-----Message----->
+						<div class="2xl:mb-6 mb-4">
+							<label for="message1" class="block text-sm font-medium text-gray-800 mb-2">Describe your request*</label>
+							<!----->
+							<textarea name="message1" id="message1" placeholder="Let us know what you need." required class="p-3 px-4 block w-full shadow-sm text-xs border border-gray-300 rounded-md focus:outline-none focus:border-gray-400 col-span-2 h-20 resize-none"></textarea>
+						</div>
+						<!--button--->
+						<div class="mt-4">
+							<a class="w-32 mx-auto text-sm block text-center font-semibold py-3 linear-gradient-orrange text-white rounded-full" href="#">Submit</a>
+						</div>
+					</form>
+				</div>
+				<!---->
+				<div class=" hidden xl:block">
+					<!---->
+					<div class="absolute top-20 left-72"> 
+						<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/Contact_us/1.png" alt="//">
+					</div>
+					<!---->
+					<div class="absolute top-40 right-64"> 
+						<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/Contact_us/2.png" alt="//">
+					</div>
+					<!---->
+					<div class="absolute left-20 bottom-40"> 
+						<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/Contact_us/3.png" alt="//">
+					</div>
+					<!---->
+					<div class="absolute right-28 bottom-28"> 
+						<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/Contact_us/4.png" alt="//">
 					</div>
 				</div>
 			</section>
 			<!-----=====Sec 002=======----->
 			<section>
 				<!----->
-				<div class="max-w-1244 mx-auto grid lg:grid-cols-2 grid-cols-1 gap-16 px-5 sm:px-10 lg:px-20 2xl:px-0 py-20">
-					<!---->
-					<div class=" relative">
-						<img height="100%" width="100%" class="w-full h-fuw-full mx-auto" src="images/about_us/01.jpg" alt="//">
+				<div class="max-w-1244 mx-auto grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-5 px-5 sm:px-10 lg:px-20 2xl:px-0 border-t md:border-t-0">
+					<!--001-->
+					<div class=" p-8 bg-white font-inter text-gray-800">
 						<!---->
-						<div class=" text-white text-center linear-gradient-orrange absolute bottom-0 md:w-3/5 w-4/5 border-8 border-b-0 border-white mx-auto left-0 right-0 py-5 flex items-center justify-center">
-							<div class="flex-row justify-center items-center w-full">
-								<h1 class=" font-semibold lg:text-xl text-lg font-jost">Marlina Moore</h1>
-								<p class=" lg:text-sm text-xs font-bold font-inter mt-2">CEO & Founder</p>
-							</div>
+						<div>
+							<img height="100%" width="100%" class="w-auto h-auto" src="images/Contact_us/message.svg" alt="//">
+						</div>
+						<!---->
+						<div>
+							<h1 class="mt-5 mb-3 text-lg font-semibold">Chat</h1>
+							<p class=" text-sm">Our customer support team would love to help you on your homebuying journey with Walter. We're available on chat on Monday through Friday from 09.00 to 18.00.</p>
+						</div>
+						<!--button-->
+						<div class=" mt-8 block">
+							<a class="text-orrange-500 text-sm font-semibold flex items-center space-x-5" href="#">
+								<span>Learn more</span>
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+									</svg>
+								</span>
+							</a>
 						</div>
 					</div>
-					<!---->
-					<div class=" flex items-center ">
-						<div class=" font-inter 2xl:w-4/5">
-							<!---->
-							<p class="text-orrange-500 lg:text-lg text-sm font-semibold mb-3">Browse amazing social media features</p>
-							<!---->
-							<h1 class="mb-4 md:text-5xl text-3xl font-semibold font-jost xl:pr-20">We Provides Best Advice For Your Business</h1>
-							<!---->
-							<ul class=" pt-8">
-								<li class=" flex space-x-4 mb-4 pb-6 border-b 2xl:pr-10 ">
-									<img height="100%" width="100%" class="w-8 h-8" src="images/about_us/light.svg" alt="//">
-									<div>
-										<h1 class="lg:text-lg text-base font-semibold text-gray-800">Daily workshops</h1>
-										<p class="lg:text-base text-sm text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-									</div>
-								</li>
-								<li class=" flex space-x-4 2xl:pr-10 ">
-									<img height="100%" width="100%" class="w-8 h-7" src="images/about_us/cirtificates.svg" alt="//">
-									<div>
-										<h1 class="lg:text-lg text-base font-semibold text-gray-800">Unlimited layouts and styles</h1>
-										<p class="lg:text-base text-sm text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-									</div>
-								</li>
-							</ul>
-							<!--button-->
-							<div class=" mt-8 block">
-								<a class="text-sm font-semibold text-white text-center bg-black px-6 filter drop-shadow-md py-3 rounded-full" href="#">
-									<span>Shop Now</span>
-								</a>
-							</div>
+					<!--002-->
+					<div class=" p-8 bg-white font-inter text-gray-800">
+						<!---->
+						<div>
+							<img height="100%" width="100%" class="w-auto h-auto" src="images/Contact_us/video.svg" alt="//">
+						</div>
+						<!---->
+						<div>
+							<h1 class="mt-5 mb-3 text-lg font-semibold">Book a video call</h1>
+							<p class=" text-sm">If you'd rather talk to a person directly, you can always schedule a videocall and get to know our Walter buying agent</p>
+						</div>
+						<!--button-->
+						<div class=" mt-8 block">
+							<a class="text-orrange-500 text-sm font-semibold flex items-center space-x-5" href="#">
+								<span>Book a call</span>
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+									</svg>
+								</span>
+							</a>
 						</div>
 					</div>
-				</div>
-				<!----->
-				<div id="about2" class="bg-cover bg-no-repeat bg-center flex items-end justify-center mb-52 p-5 md:p-0" style="background-image: url(images/about_us/a_bg2.jpg);">
-					<div class="max-w-1244 mx-auto bg-white grid lg:grid-cols-2 grid-cols-1 lg:p-20 p-5 lg:-mb-52 -mb-96 filter drop-shadow-md">
+					<!--003-->
+					<div class=" p-8 bg-white font-inter text-gray-800">
 						<!---->
-						<div class=" flex items-center justify-center">
-							<div class=" p-5 border-8 border-in border-color-orrange relative sm:w-auto w-full">
-								<!---->
-								<div class=" flex items-center justify-center lg:px-9 py-5">
-									<h1 class=" font-jost font-medium text-7xl text-gray-800 mr-5">48</h1>
-									<p class=" text-xl text-gray-800 font-semibold font-inter">Year<br>experience<br>working</p>
-								</div>
-								<!---->
-								<div>
-									<div class=" bg-white h-4 w-52 absolute -top-3 mx-auto left-0 right-0"></div>
-									<div class=" bg-white h-4 w-52 absolute -bottom-3 mx-auto left-0 right-0"></div>
-								</div>
-							</div>
+						<div>
+							<img height="100%" width="100%" class="w-auto h-auto" src="images/Contact_us/video.svg" alt="//">
 						</div>
 						<!---->
-						<div class=" font-inter my-10 lg:my-0">
-							<!---->
-							<p class="text-orrange-500 lg:text-lg text-sm font-semibold mb-3">Powerful theme for designer</p>
-							<!---->
-							<h1 class="mb-4 md:text-5xl text-3xl font-semibold font-jost">Become a partner of our good company</h1>
-							<!---->
-							<div class=" pt-4">
-								<p class=" text-gray-500 text-base">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal...</p>
-							</div>
-							<!--button-->
-							<div class=" mt-10 block">
-								<a class="text-sm font-semibold text-white text-center bg-black px-8 filter drop-shadow-md py-3 rounded-full" href="#">
-									<span>Become a Partner</span>
-								</a>
-							</div>
+						<div>
+							<h1 class="mt-5 mb-3 text-lg font-semibold">Message on WhatsApp</h1>
+							<p class=" text-sm">There's nothing easier than sending a quick message with your question. That's why we're available on WhatsApp for all your quick questions.</p>
+						</div>
+						<!--button-->
+						<div class=" mt-8 block">
+							<a class="text-orrange-500 text-sm font-semibold flex items-center space-x-5" href="#">
+								<span>Send message</span>
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+									</svg>
+								</span>
+							</a>
 						</div>
 					</div>
 				</div>
 			</section>
 			<!-----=====Sec 003=======----->
 			<section>
-				<!--Hero text--->
-				<div class=" text-center py-20">
+				<!----->
+				<div>
+					<!--Hero text--->
+					<div class=" text-center py-16">
+						<!---->
+						<p class="text-orrange-500 md:text-lg text-sm font-semibold font-inter mb-3 ">Our Clients</p>
+						<!---->
+						<h1 class="md:text-5xl text-3xl font-bold font-jost">We worked with brands</h1>
+					</div>
+				</div>
+				<!----->
+				<div class="max-w-1244 mx-auto grid lg:grid-cols-5 md:grid-cols-4 grid-cols-3 px-5 sm:px-10 lg:px-20 2xl:px-0 pb-16">
 					<!---->
-					<h1 class="mb-3 md:text-5xl text-3xl font-bold font-jost">Skilled Team</h1>
+					<div class=" lg:border-b lg:border-r flex items-center justify-center lg:p-10 p-5"> 
+						<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/portfolio/007.png" alt="//">
+					</div>
 					<!---->
-					<p class="text-orrange-500 md:text-lg text-sm font-semibold font-inter">Skilled Team</p>
-				</div>
-				<!----->
-				<div class="max-w-1244 mx-auto grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-5 px-5 sm:px-10 lg:px-20 2xl:px-0 pb-20">
-					<!--001-->
-					<div class="shadow-md"> 
-						<img height="100%" width="100%" class="w-auto h-auto" src="images/about_us/02.jpg" alt="//">
-						<!---->
-						<div class="p-5">
-							<p class=" lg:text-xl text-lg text-gray-800 font-semibold">Jone Deuo</p>
-							<p class=" text-sm text-gray-500 font-medium">Sr. Web Developer</p>
-						</div>
+					<div class=" lg:border-b lg:border-r flex items-center justify-center lg:p-10 p-5"> 
+						<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/portfolio/008.png" alt="//">
 					</div>
-					<!--002-->
-					<div class="shadow-md"> 
-						<img height="100%" width="100%" class="w-auto h-auto" src="images/about_us/03.jpg" alt="//">
-						<!---->
-						<div class="p-5">
-							<p class=" lg:text-xl text-lg text-gray-800 font-semibold">Jone Deuo</p>
-							<p class=" text-sm text-gray-500 font-medium">Sr. Web Developer</p>
-						</div>
+					<!---->
+					<div class=" lg:border-b lg:border-r flex items-center justify-center lg:p-10 p-5"> 
+						<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/portfolio/009.png" alt="//">
 					</div>
-					<!--003-->
-					<div class="shadow-md"> 
-						<img height="100%" width="100%" class="w-auto h-auto" src="images/about_us/01.jpg" alt="//">
-						<!---->
-						<div class="p-5">
-							<p class=" lg:text-xl text-lg text-gray-800 font-semibold">Jone Deuo</p>
-							<p class=" text-sm text-gray-500 font-medium">Sr. Web Developer</p>
-						</div>
+					<!---->
+					<div class=" lg:border-b lg:border-r flex items-center justify-center lg:p-10 p-5"> 
+						<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/portfolio/12.png" alt="//">
 					</div>
-				</div>
-				<!----->
-				<div class=" bg-green-250">
-					<div class="max-w-1244 mx-auto grid lg:grid-cols-2 grid-cols-1 gap-16 px-5 sm:px-10 lg:px-20 2xl:px-0 py-20">
-						<!---->
-						<div class=" flex flex-col items-center justify-center lg:pl-10  text-inter relative">
-							<p class=" text-inter lg:text-3xl text-xl text-gray-800 font-medium">John Doe The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original.</p>
-							<p class=" lg:text-2xl text-sm font-medium text-gray-500 mt-8"><span class=" text-orrange-500 font-semibold"> JOHN DOE</span> - COO, AMERIMAR ENTERPRISES, INC.</p>
-							<div class=" absolute left-0 lg:top-28 -top-16">
-								<img height="100%" width="100%" class="lg:w-40 w-28 h-auto" src="images/about_us/19.png" alt="//">
-							</div>
-						</div>
-						<!---->
-						<div class="grid grid-cols-3 md:gap-8 gap-5 justify-center">
-							<!---->
-							<div>
-								<img height="100%" width="100%" class="w-full h-auto" src="images/about_us/05.jpg" alt="//">
-							</div>
-							<!---->
-							<div>
-								<img height="100%" width="100%" class="w-full h-auto" src="images/about_us/06.jpg" alt="//">
-							</div>
-							<!---->
-							<div>
-								<img height="100%" width="100%" class="w-full h-auto" src="images/about_us/07.jpg" alt="//">
-							</div>
-							<!---->
-							<div>
-								<img height="100%" width="100%" class="w-full h-auto" src="images/about_us/08.jpg" alt="//">
-							</div>
-							<!---->
-							<div>
-								<img height="100%" width="100%" class="w-full h-auto" src="images/about_us/09.jpg" alt="//">
-							</div>
-							<!---->
-							<div>
-								<img height="100%" width="100%" class="w-full h-auto" src="images/about_us/10.jpg" alt="//">
-							</div>
-							<!---->
-							<div class=" col-span-3 flex justify-center md:gap-8 gap-5 px-14 md:px-0">
-								<!---->
-								<div>
-									<img height="100%" width="100%" class="w-full h-auto" src="images/about_us/11.jpg" alt="//">
-								</div>
-								<!---->
-								<div>
-									<img height="100%" width="100%" class="w-full h-auto" src="images/about_us/12.jpg" alt="//">
-								</div>
-							</div>
-						</div>
+					<!---->
+					<div class=" lg:border-b flex items-center justify-center lg:p-10 p-5"> 
+						<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/portfolio/11.png" alt="//">
+					</div>
+					<!---->
+					<div class="lg:border-r flex items-center justify-center lg:p-10 p-5"> 
+						<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/portfolio/10.png" alt="//">
+					</div>
+					<!---->
+					<div class="lg:border-r flex items-center justify-center lg:p-10 p-5"> 
+						<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/portfolio/13.png" alt="//">
+					</div>
+					<!---->
+					<div class="lg:border-r flex items-center justify-center lg:p-10 p-5"> 
+						<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/portfolio/14.png" alt="//">
+					</div>
+					<!---->
+					<div class="lg:border-r lg:flex md:hidden flex items-center justify-center lg:p-10 p-5"> 
+						<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/portfolio/15.png" alt="//">
+					</div>
+					<!---->
+					<div class=" lg:flex hidden items-center justify-center lg:p-10 p-5"> 
+						<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/portfolio/16.png" alt="//">
 					</div>
 				</div>
-				<!----->
-				<div class=" py-20 text-center">
-					<!----->
-					<p class="pb-10 text-gray-800 font-semibold lg:text-2xl text-xl font-jost">Trusted by the big ones, loved by everyone</p>
-					<!----->
-					<div class="max-w-1244 mx-auto grid lg:grid-cols-6 md:grid-cols-4 grid-cols-3 gap-5 px-5 sm:px-10 lg:px-20 2xl:px-0">
-						<!---->
-						<div> 
-							<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/about_us/13.png" alt="//">
-						</div>
-						<!---->
-						<div> 
-							<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/about_us/14.png" alt="//">
-						</div>
-						<!---->
-						<div> 
-							<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/about_us/15.png" alt="//">
-						</div>
-						<!---->
-						<div class="hidden md:block"> 
-							<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/about_us/16.png" alt="//">
-						</div>
-						<!---->
-						<div class="hidden lg:block"> 
-							<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/about_us/17.png" alt="//">
-						</div>
-						<!---->
-						<div class="hidden lg:block"> 
-							<img height="100%" width="100%" class="w-auto h-auto mx-auto" src="images/about_us/18.png" alt="//">
-						</div>
-					</div>
-				</div>
-				
 			</section>
 		</main>
 		<!-- ==Footer Section == -->
